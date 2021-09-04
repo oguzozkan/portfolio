@@ -37,7 +37,7 @@
   "homepage": "oguzozkan.github.io/portfolio",
   "scripts": {
     "predeploy": "npm run build",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "test": "react-scripts test",
