@@ -11,7 +11,7 @@ function App() {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/deneme" component={Deneme} exact />
-          <Route path="/portfolio" component={Home2} exact />
+          <Route path="/portfolios" component={Home2} exact />
         </Switch>
       </Router>
     </div>
