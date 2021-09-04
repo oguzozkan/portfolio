@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import img1 from "../../images/elixir_logo_320.png";
 import img2 from "../../images/img4.jpg";
 import img3 from "../../images/img3.jpg";
+import { Redirect } from "react-router-dom";
 import {
   PortfolioContainer,
   PortfolioWrap,
@@ -18,7 +19,8 @@ import { FaBitcoin } from "react-icons/fa";
 const Portfolio = ({ lightbg, LightToggle }) => {
   return (
     <>
-      <PortfolioContainer lightbg={lightbg}>
+      <Redirect to="/" />
+      {/* <PortfolioContainer lightbg={lightbg}>
         <PortfolioWrap>
           <PortfolioCart lightbg={lightbg}>
             <ImgWrap>
@@ -46,7 +48,7 @@ const Portfolio = ({ lightbg, LightToggle }) => {
             <PortfolioP lightbg={lightbg}>React Js</PortfolioP>
           </PortfolioCart>
         </PortfolioWrap>
-      </PortfolioContainer>
+      </PortfolioContainer> */}
     </>
   );
 };
