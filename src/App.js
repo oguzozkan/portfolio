@@ -11,8 +11,8 @@ function App() {
       <Router basename={window.location.pathname || ""}>
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/portfolio/gallery" component={GalaryRew} exact />
-          <Route path="/portfolio/portfolios" component={Home2} exact />
+          <Route path="/gallery" component={GalaryRew} exact />
+          <Route path="/portfolios" component={Home2} exact />
         </Switch>
       </Router>
     </div>
