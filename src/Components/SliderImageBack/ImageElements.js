@@ -64,5 +64,5 @@ export const Img = styled.img`
   width: 100%;
   height: auto;
   z-index: 4;
-  opacity: ${({ imageState }) => (imageState ? "0.8" : "1")};
+  opacity: ${({ imageState }) => (imageState ? "1" : "0.7")};
 `;

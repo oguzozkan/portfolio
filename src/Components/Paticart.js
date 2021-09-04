@@ -32,7 +32,7 @@ const Paticart = () => {
   const [patiState, setPati] = useState(false);
 
   const changeStatuofPati = () => {
-    if (window.scrollY <= 2300) {
+    if (window.scrollY <= 2700) {
       setPati(true);
       console.log("Ptrue" + patiState);
     } else {

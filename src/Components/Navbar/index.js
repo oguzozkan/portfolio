@@ -45,20 +45,7 @@ const Navbar = ({ toggle, LightToggle, lightbg }) => {
         </MobileIcon>
 
         <NavMenu>
-          <NavItem>
-            <NavLinks
-              activeClass="active"
-              to="galary"
-              smooth={true}
-              duration={100}
-              exact="true"
-              spy={true}
-              offset={-75}
-              lightbg={lightbg}
-            >
-              Galary
-            </NavLinks>
-          </NavItem>
+          <NavItem></NavItem>
           <NavItem>
             <NavLinks
               activeClass="active"
@@ -95,7 +82,7 @@ const Navbar = ({ toggle, LightToggle, lightbg }) => {
               exact="true"
               spy={true}
               offset={-75}
-              to="contact"
+              to="contacts"
               lightbg={lightbg}
             >
               Contact

@@ -32,7 +32,7 @@ const Footer = ({ lightbg }) => {
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
-            <FooterLinkItems lightbg={lightbg}>
+            <FooterLinkItems lightbg={lightbg} id="contacts">
               <FooterLinkTitle>About ME</FooterLinkTitle>
               <FooterLink to="#" lightbg={lightbg}>
                 About Us
