@@ -13,13 +13,13 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: true,
-  LinkPr: "/deneme",
+  LinkPr: "/gallery",
   btndisplay: true,
   LinkDesPr: "Learn more",
 };
 export const homeObjTwo = {
   id: "contact",
-  LinkPr: "/portfolio",
+  LinkPr: "/portfolios",
   LinkDesPr: "See more",
   lightText: false,
   lightTextDesc: true,
