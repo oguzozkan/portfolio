@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Router basename="/portfolio">
+      <Router basename={window.location.pathname || ""}>
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/gallery" component={GalaryRew} exact />
