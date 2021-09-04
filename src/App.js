@@ -1,23 +1,19 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Home from "./pages/home";
+import Home2 from "./pages/home2";
+import Deneme from "./Components/Deneme";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          gggggggg232312323123213231231232121gggggggggggg
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/deneme" component={Deneme} exact />
+          <Route path="/portfolio" component={Home2} exact />
+        </Switch>
+      </Router>
     </div>
   );
 }
