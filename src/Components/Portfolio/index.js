@@ -19,8 +19,7 @@ import { FaBitcoin } from "react-icons/fa";
 const Portfolio = ({ lightbg, LightToggle }) => {
   return (
     <>
-      <Redirect to="/" />
-      {/* <PortfolioContainer lightbg={lightbg}>
+      <PortfolioContainer lightbg={lightbg}>
         <PortfolioWrap>
           <PortfolioCart lightbg={lightbg}>
             <ImgWrap>
@@ -48,7 +47,7 @@ const Portfolio = ({ lightbg, LightToggle }) => {
             <PortfolioP lightbg={lightbg}>React Js</PortfolioP>
           </PortfolioCart>
         </PortfolioWrap>
-      </PortfolioContainer> */}
+      </PortfolioContainer>
     </>
   );
 };
