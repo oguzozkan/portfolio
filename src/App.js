@@ -10,9 +10,9 @@ function App() {
     <div>
       <Router basename="/portfolio">
         <Switch>
-          <Route exact path={"/"} component={Home} />
-          <Route exact path={"/portfolio/gallery"} component={GalaryRew} />
-          <Route exact path={"/portfolio/portfolios"} component={Home2} />
+          <Route path={"/"} component={Home} />
+          <Route path={"/portfolio/gallery"} component={GalaryRew} />
+          <Route path={"/portfolio/portfolios"} component={Home2} />
         </Switch>
       </Router>
     </div>
