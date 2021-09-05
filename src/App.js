@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <Router basename={process.env.PUBLIC_URL}>
+        <Route path={"/"} exact component={Home} />
         <Switch>
-          <Route path={"/"} exact component={Home} />
           <Route path={"/gallery"} exact component={GalaryRew} />
           <Route path={"/portfolios"} exact component={Home2} />
         </Switch>
