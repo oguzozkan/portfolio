@@ -9,17 +9,19 @@ function App() {
   return (
     <div>
       <Router basename={process.env.PUBLIC_URL}>
-        <div>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/gallery">
-            <GalaryRew />
-          </Route>
-          <Route path="/portfolios">
-            <Home2 />
-          </Route>
-        </div>
+        <Switch>
+          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/gallery"}
+            component={GalaryRew}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/portfolios"}
+            component={Home2}
+          />
+        </Switch>
       </Router>
     </div>
   );
