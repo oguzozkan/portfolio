@@ -11,8 +11,8 @@ function App() {
       <Router basename="/portfolio">
         <Switch>
           <Route exact path={"/"} component={Home} />
-          <Route exact path={"/gallery"} component={GalaryRew} />
-          <Route exact path={"/portfolios"} component={Home2} />
+          <Route exact path={"/portfolio/gallery"} component={GalaryRew} />
+          <Route exact path={"/portfolio/portfolios"} component={Home2} />
         </Switch>
       </Router>
     </div>
