@@ -37,7 +37,7 @@ const Navbar = ({ toggle, LightToggle, lightbg }) => {
   return (
     <Nav scrolNAvigation={scrolNAvigation} lightbg={lightbg}>
       <NavbarContainer>
-        <NavLogo to="/portfolio" onClick={toggleUp} lightbg={lightbg}>
+        <NavLogo hash="#" onClick={toggleUp} lightbg={lightbg}>
           Oguzhan
         </NavLogo>
         <MobileIcon onClick={toggle}>
