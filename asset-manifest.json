@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/oguzozkan.github.io/portfolio/static/css/main.d374df5e.chunk.css",
-    "main.js": "/oguzozkan.github.io/portfolio/static/js/main.1698c454.chunk.js",
-    "main.js.map": "/oguzozkan.github.io/portfolio/static/js/main.1698c454.chunk.js.map",
+    "main.js": "/oguzozkan.github.io/portfolio/static/js/main.01c6198a.chunk.js",
+    "main.js.map": "/oguzozkan.github.io/portfolio/static/js/main.01c6198a.chunk.js.map",
     "runtime-main.js": "/oguzozkan.github.io/portfolio/static/js/runtime-main.de356fef.js",
     "runtime-main.js.map": "/oguzozkan.github.io/portfolio/static/js/runtime-main.de356fef.js.map",
     "static/css/2.cbebf476.chunk.css": "/oguzozkan.github.io/portfolio/static/css/2.cbebf476.chunk.css",
-    "static/js/2.df806464.chunk.js": "/oguzozkan.github.io/portfolio/static/js/2.df806464.chunk.js",
-    "static/js/2.df806464.chunk.js.map": "/oguzozkan.github.io/portfolio/static/js/2.df806464.chunk.js.map",
+    "static/js/2.d7b054a4.chunk.js": "/oguzozkan.github.io/portfolio/static/js/2.d7b054a4.chunk.js",
+    "static/js/2.d7b054a4.chunk.js.map": "/oguzozkan.github.io/portfolio/static/js/2.d7b054a4.chunk.js.map",
     "static/js/3.3642e5db.chunk.js": "/oguzozkan.github.io/portfolio/static/js/3.3642e5db.chunk.js",
     "static/js/3.3642e5db.chunk.js.map": "/oguzozkan.github.io/portfolio/static/js/3.3642e5db.chunk.js.map",
     "index.html": "/oguzozkan.github.io/portfolio/index.html",
     "static/css/2.cbebf476.chunk.css.map": "/oguzozkan.github.io/portfolio/static/css/2.cbebf476.chunk.css.map",
     "static/css/main.d374df5e.chunk.css.map": "/oguzozkan.github.io/portfolio/static/css/main.d374df5e.chunk.css.map",
-    "static/js/2.df806464.chunk.js.LICENSE.txt": "/oguzozkan.github.io/portfolio/static/js/2.df806464.chunk.js.LICENSE.txt",
+    "static/js/2.d7b054a4.chunk.js.LICENSE.txt": "/oguzozkan.github.io/portfolio/static/js/2.d7b054a4.chunk.js.LICENSE.txt",
     "static/media/bilkent.7e1493ab.jpg": "/oguzozkan.github.io/portfolio/static/media/bilkent.7e1493ab.jpg",
     "static/media/bot.png": "/oguzozkan.github.io/portfolio/static/media/bot.9a22ab5a.png",
     "static/media/elixir_logo_320.8e5a6f7f.png": "/oguzozkan.github.io/portfolio/static/media/elixir_logo_320.8e5a6f7f.png",
@@ -44,8 +44,8 @@
   "entrypoints": [
     "static/js/runtime-main.de356fef.js",
     "static/css/2.cbebf476.chunk.css",
-    "static/js/2.df806464.chunk.js",
+    "static/js/2.d7b054a4.chunk.js",
     "static/css/main.d374df5e.chunk.css",
-    "static/js/main.1698c454.chunk.js"
+    "static/js/main.01c6198a.chunk.js"
   ]
 }
