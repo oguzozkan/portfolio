@@ -10,8 +10,8 @@ function App() {
     <div>
       <Switch>
         <Route path={"/"} exact component={Home} />
-        <Route path={"/gallery"} exact component={GalaryRew} />
-        <Route path={"/portfolios"} exact component={Home2} />
+        <Route path={"/portfolio/gallery"} exact component={GalaryRew} />
+        <Route path={"/portfolio/portfolios"} exact component={Home2} />
       </Switch>
     </div>
   );
