@@ -8,19 +8,11 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 function App() {
   return (
     <div>
-      <Router basename={window.location.pathname || ""}>
+      <Router basename="portfolio">
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/gallery"}
-            component={GalaryRew}
-          />
-          <Route
-            exact
-            path={process.env.PUBLIC_URL + "/portfolios"}
-            component={Home2}
-          />
+          <Route exact path={"/"} component={Home} />
+          <Route exact path={"/gallery"} component={GalaryRew} />
+          <Route exact path={"/portfolios"} component={Home2} />
         </Switch>
       </Router>
     </div>
