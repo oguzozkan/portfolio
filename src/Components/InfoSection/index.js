@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Button } from "../ButtonHref";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   InfoContainer,
   InfoWrapper,
@@ -36,28 +37,33 @@ const InfoSection = ({
   changeToggle,
   btndisplay,
 }) => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   return (
     <>
       <InfoContainer lightbg={lightbg} id={id}>
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
-            <Column1>
-              <TextWrapper>
-                <TopLine>{topLine}</TopLine>
-                <Heading lightText={!lightbg}>{headline}</Heading>
-                <Subtitle darkText={lightbg}>{description}</Subtitle>
-                <BtnWrap btndisplay={btndisplay}>
-                  <Button primary="true" dark="true" lightbg={lightbg}>
-                    <a
-                      href={LinkPr}
-                      style={{
-                        textDecoration: "none",
-                        color: "#fff",
-                      }}
-                    >
-                      {LinkDesPr}
-                    </a>
-                    {/* <Button
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <InfoWrapper>
+            <InfoRow imgStart={imgStart}>
+              <Column1>
+                <TextWrapper>
+                  <TopLine>{topLine}</TopLine>
+                  <Heading lightText={!lightbg}>{headline}</Heading>
+                  <Subtitle darkText={lightbg}>{description}</Subtitle>
+                  <BtnWrap btndisplay={btndisplay}>
+                    <Button primary="true" dark="true" lightbg={lightbg}>
+                      <a
+                        href={LinkPr}
+                        style={{
+                          textDecoration: "none",
+                          color: "#fff",
+                        }}
+                      >
+                        {LinkDesPr}
+                      </a>
+                      {/* <Button
                     to="/deneme"
                     smooth={true}
                     duration={500}
@@ -70,17 +76,18 @@ const InfoSection = ({
                     lightbg={lightbg}
                   >
                     {buttonLabel} */}
-                  </Button>
-                </BtnWrap>
-              </TextWrapper>
-            </Column1>
-            <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} onClick={changeToggle} />
-              </ImgWrap>
-            </Column2>
-          </InfoRow>
-        </InfoWrapper>
+                    </Button>
+                  </BtnWrap>
+                </TextWrapper>
+              </Column1>
+              <Column2>
+                <ImgWrap>
+                  <Img src={img} alt={alt} onClick={changeToggle} />
+                </ImgWrap>
+              </Column2>
+            </InfoRow>{" "}
+          </InfoWrapper>
+        </div>
       </InfoContainer>
     </>
   );

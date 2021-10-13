@@ -28,7 +28,6 @@ const HeroSection = ({ isContact, Contacttoggle, lightbg }) => {
         ) : (
           <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
         )}
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4"></VideoBg>
       </HeroBg>
       <HeroContent isContact={isContact} Contacttoggle={Contacttoggle}>
         <HeroH1>Hi, I am Oguzhan Ozkan</HeroH1>

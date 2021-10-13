@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "swiper/swiper.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import BackgroundHistory from "./BackgroundHistory";
@@ -8,6 +8,8 @@ import {
   backObjTwo,
   backObjThree,
 } from "../Components/BackgroundHistory/Data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // const slideData = [{ text: "skyline", img: { pati } }];
 // const text2 = "deneme2";
 // const myImgstyle = {
@@ -29,6 +31,9 @@ const AppContainer = styled.div`
 `;
 
 function Slide({ lightbg }) {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
   return (
     /*
            <AppContainer className="resume">
@@ -38,34 +43,35 @@ function Slide({ lightbg }) {
         <BackgroundHistory></BackgroundHistory>
         <BackgroundHistory></BackgroundHistory>
       </ScrollingCarousel> */
-
-    <Swiper
-      className="mySwiper"
-      spaceBetween={10}
-      slidesPerView={1.1}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-      style={{ background: lightbg ? "#fff" : "#000" }}
-    >
-      <SwiperSlide>
-        <BackgroundHistory
-          {...backObjOne}
-          lightbg={lightbg}
-        ></BackgroundHistory>
-      </SwiperSlide>
-      <SwiperSlide>
-        <BackgroundHistory
-          {...backObjTwo}
-          lightbg={lightbg}
-        ></BackgroundHistory>
-      </SwiperSlide>
-      <SwiperSlide>
-        <BackgroundHistory
-          {...backObjThree}
-          lightbg={lightbg}
-        ></BackgroundHistory>
-      </SwiperSlide>
-    </Swiper>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <Swiper
+        className="mySwiper"
+        spaceBetween={10}
+        slidesPerView={1.1}
+        onSlideChange={() => console.log("slide change")}
+        onSwiper={(swiper) => console.log(swiper)}
+        style={{ background: lightbg ? "#fff" : "#000" }}
+      >
+        <SwiperSlide>
+          <BackgroundHistory
+            {...backObjOne}
+            lightbg={lightbg}
+          ></BackgroundHistory>
+        </SwiperSlide>
+        <SwiperSlide>
+          <BackgroundHistory
+            {...backObjTwo}
+            lightbg={lightbg}
+          ></BackgroundHistory>
+        </SwiperSlide>
+        <SwiperSlide>
+          <BackgroundHistory
+            {...backObjThree}
+            lightbg={lightbg}
+          ></BackgroundHistory>
+        </SwiperSlide>
+      </Swiper>{" "}
+    </div>
     /* <SlideElement
           image={man}
           text1="Personal"

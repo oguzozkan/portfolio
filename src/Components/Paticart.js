@@ -9,7 +9,7 @@ const Pati = styled.div`
 
   top: 200px;
   right: 0px;
-  z-index: 1;
+  z-index: -1;
   display: ${({ patiState }) => (patiState ? "none" : "flex")};
   position: ${({ patiState }) => (patiState ? "absolute" : "fixed")};
 
